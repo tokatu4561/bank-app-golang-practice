@@ -11,3 +11,6 @@ dropdb:
 
 migrateup:
 	migrate -path db/migration -database "$(DB_URL)" -verbose up
+
+sqlc:
+	sqlc generate
